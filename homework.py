@@ -24,7 +24,7 @@ def get_status(user_id):
     return status
 
 
-def send_sms(sms_text):
+def sms_sender(sms_text):
     account_sid = os.getenv('TWILIO_ACCOUNT_SID')
     auth_token = os.getenv('TWILIO_AUTH_TOKEN')
     client = Client(account_sid, auth_token)
